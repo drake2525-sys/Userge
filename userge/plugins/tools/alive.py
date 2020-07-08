@@ -20,18 +20,15 @@ async def alive(message: Message):
     await message.delete()
     await sendit(message)
     output = f"""
-**USERGE is Up and Running**
+**Your Son is Up and Running**
 
-       __Durable as a Serge__
+    __Where Is My Mom?__
 
 • **uptime** : `{userge.uptime}`
 • **python version** : `{versions.__python_version__}`
 • **pyrogram version** : `{versions.__pyro_version__}`
 • **userge version** : `{get_version()}`
-• **license** : {versions.__license__}
-• **copyright** : {versions.__copyright__}
-• **repo** : [Userge]({Config.UPSTREAM_REPO})
-"""
+ 
     await message.client.send_message(message.chat.id, output, disable_web_page_preview=True)
 
 
