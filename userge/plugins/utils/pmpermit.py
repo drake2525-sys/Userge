@@ -20,10 +20,9 @@ ALLOWED_COLLECTION = get_collection("PM_PERMIT")
 
 pmCounter: Dict[int, int] = {}
 allowAllFilter = Filters.create(lambda _, __: Config.ALLOW_ALL_PMS)
-noPmMessage = ("Hello {fname} this is an automated message\n"
-               "Please wait untill you get approved to direct message "
-               "And please dont spam untill then ")
-blocked_message = "**You were automatically blocked**"
+noPmMessage = Hey!
+My Master Is Offline Just Leave Your Message He Is Quite Busy In Some Work, Thankyou!
+blocked_message = Nai Mana Tu Le Salle Ban Kha
 
 
 async def _init() -> None:
